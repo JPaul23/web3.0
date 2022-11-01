@@ -1,4 +1,4 @@
-// SPDX-Licence-Identifier: UNLICENCED
+// SPDX-Licence-Identifier: UNLICENSED
 
 pragma solidity ^0.8.0;
 
@@ -48,7 +48,7 @@ contract Transactions {
         transactions.push(
             TransferStruct(
                 msg.sender,
-                reciver,
+                reciever,
                 amount,
                 message,
                 block.timestamp,
@@ -58,7 +58,7 @@ contract Transactions {
         //emitting the transfer
         emit Transfer(
             msg.sender,
-            reciver,
+            reciever,
             amount,
             message,
             block.timestamp,

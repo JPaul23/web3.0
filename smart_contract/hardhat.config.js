@@ -1,6 +1,13 @@
-require("@nomicfoundation/hardhat-toolbox");
+//https://eth-goerli.g.alchemy.com/v2/lxQWBQd0xOFvHdvffQ-_ekOTZ7nFG4zI
 
-/** @type import('hardhat/config').HardhatUserConfig */
+require('@nomiclabs/hardhat-waffle');
+
 module.exports = {
-  solidity: "0.8.17",
-};
+  solidity: '0.8.0',
+  networks:{
+    goerli: {
+      url: 'https://eth-goerli.g.alchemy.com/v2/lxQWBQd0xOFvHdvffQ-_ekOTZ7nFG4zI',
+      accounts: ['******************************************']
+    }
+  }
+}

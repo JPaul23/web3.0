@@ -1,3 +1,4 @@
+// COMMAND to deploy: npx hardhat run scripts/deploy.js --network goerli
 const main = async () => {
 
   // Generate Instances of contracts.
